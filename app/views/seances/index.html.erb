@@ -35,7 +35,7 @@
           <%= seance.titre %>
         </div>
         <div class="panel panel-body">
-         <%= seance.contenu %>
+         <%= truncate(seance.contenu, length: 20) %>
         </div>
        <p><%= link_to "Acceder", seance, class: "btn btn-default" %></p> 
 
