@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Apprendre l'informatique </title>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="thumbnail">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      </div>
+
+    </div><!-- /.container -->
+
+<p id="notice"><%= notice %></p>
+
+<h1>Liste des scéances</h1>
+<div class="row">
+<% @seances.each do |seance| %>
+<div class="container">
+  <div class="box_index">
+      <div class="panel panel-success">
+        <div class="panel panel-heading">
+          <%= seance.titre %>
+        </div>
+        <div class="panel panel-body">
+         <%= seance.contenu %>
+        </div>
+       <p><%= link_to "Acceder", seance, class: "btn btn-default" %></p> 
+
+      </div>
+      
+  </div>
+  </div>
+  <% end %>
+</div>
+
+  </body>
+</html>
+
+
+

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+<div class="box">
+<div class="titre">
+	<h1><%= @seance.titre %></h1>
+</div>
+<h2> I- Regarder la video</h2>
+<div class="embed-container">
+	<%= embed_yt(@seance.url_video) %>
+</div>
+ <div class="contenu">
+<h2> II- Lire attentivement</h2>
+ 	<%= @seance.contenu %>
+ </div>
+
+ <div class="question">
+  <h2>repondre aux questions suivantes</h2>
+ 	<%= link_to "Exercice", "#{@seance.url_question}", class: "btn btn-default", target: "_blank" %>
+ </div>
+  
+
+
+<%= link_to 'Edit', edit_seance_path(@seance) %> |
+<%= link_to 'Back', seances_path %>
+</div>	
+
