@@ -14,21 +14,24 @@
   </head>
 
   <body>
-    <div class="container">
-
-      <div class="thumbnail">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      </div>
-
-    </div><!-- /.container -->
-
 <p id="notice"><%= notice %></p>
+  <div class="container">
+  <div class="jumbotron">
+      <div class="container">
+        <h1>Bienvenu!, élève !</h1>
+        <p>ce site à pour l'objectif de vous aider à bien comprendre le cours, faire des TPs, et répondre à des éxercices.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Apprendre Plus &raquo;</a></p>
+      </div>
+    </div>
+    </div>
+ 
 
+
+<div class="container">
 <h1>Liste des scéances</h1>
 <div class="row">
 <% @seances.each do |seance| %>
-<div class="container">
+
   <div class="box_index">
       <div class="panel panel-success">
         <div class="panel panel-heading">
@@ -42,10 +45,10 @@
       </div>
       
   </div>
-  </div>
+
   <% end %>
 </div>
-
+</div>
   </body>
 </html>
 
